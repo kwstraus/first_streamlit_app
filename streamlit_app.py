@@ -72,8 +72,6 @@ if streamlit.button('Add a Fruit to List'):
 # don't run anything past here while we troubleshoot
 streamlit.stop()
 
-streamlit.
-
 my_cur=my_cnx.cursor()
 my_cur.execute("SELECT * FROM FRUIT_LOAD_LIST")
 my_data_rows=my_cur.fetchall()
