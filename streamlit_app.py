@@ -45,5 +45,6 @@ streamlit.header("The friut load list contains:")
 streamlit.dataframe(my_data_rows)
 
 fruit_choice=streamlit.text_input('What fruit would you like add?','jackfruit')
-my_cnx.execute("insert into fruit_load_list(fruit_name) values('jackfruit')")
+sql_stmt="insert into fruit_load_list(fruit_name) values('jackfruit')"
+my_cnx.execute(sql_stmt)
 streamlit.write('Thanks for adding '+fruit_choice)
